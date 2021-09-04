@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - wavesurfer.js timeline</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+</head>
+<body>
+<!--  defines the main wavesurfer.js lib -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.3/wavesurfer.min.js"></script>
+
+<!-- this define the wavesurfer.js  timeline -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.3/plugin/wavesurfer.timeline.min.js"></script>
+
+<!-- This id is defines the container when the object of WaveSurfer is created  -->
+<div id="waveform"></div>
+<div id="waveform-timeline"></div>
+
+<p align="center">
+  <button class="btn btn-primary" onclick="wavesurfer.playPause()">
+    <i class="glyphicon glyphicon-play"></i>
+    Play/Pause
+  </button>
+</p>
+<!-- This is to include script.js file so that html can get to knwow which js file is calling -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
